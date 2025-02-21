@@ -1,0 +1,70 @@
+.note-form {
+  max-width: 600px;
+  margin: 2rem auto; /* Centrado horizontal */
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.note-form h2 {
+  text-align: center; /* Título centrado */
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .note-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .note-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .note-form button:hover {
+    background-color: #0056b3;
+  }
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+  }

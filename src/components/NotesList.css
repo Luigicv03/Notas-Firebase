@@ -1,0 +1,62 @@
+.notes-container {
+  padding: 2rem;
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrado en la pantalla */
+}
+  
+.header {
+  position: relative; /* Para posicionar el botón de cerrar sesión */
+  text-align: center; /* Centra el título */
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+  
+.logout-button {
+  position: absolute; /* Posiciona el botón en la esquina */
+  top: 0;
+  right: 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+  .logout-button:hover {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .new-note-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  
+  .new-note-button:hover {
+    background-color: #218838;
+  }
+  
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 2rem;
+    justify-content: center; /* Centrado horizontal */
+  }
+
+  @media (max-width: 1000px) {
+    .notes-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .notes-grid {
+      grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+  }

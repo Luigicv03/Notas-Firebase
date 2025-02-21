@@ -1,0 +1,46 @@
+.note {
+  position: relative; /* Contenedor relativo para los botones */
+  max-width: 300px;
+  min-height: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.note-title {
+  text-align: center; /* Título centrado */
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  
+.note-content {
+  color: #666;
+  line-height: 1.5;
+  flex-grow: 1;
+  overflow: hidden;
+
+}
+
+.note-actions {
+  position: absolute; /* Posiciona los botones en la nota */
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+  
+  .delete-icon {
+    color: #dc3545;
+    cursor: pointer;
+  }
+  
+  .delete-icon:hover {
+    color: #c82333;
+  }
